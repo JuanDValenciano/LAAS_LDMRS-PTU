@@ -16,7 +16,7 @@ import  scan3D
 
 import pickle
 
-path_data = "/home/haroldfmurcia/3D_sensor/data"
+path_data = os.getcwd() + "/data"
 path_bin  = "/home/haroldfmurcia/ROS/bin"
 
 def initScan():
