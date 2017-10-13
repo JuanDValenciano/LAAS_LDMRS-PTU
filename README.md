@@ -26,6 +26,7 @@ A ROS driver for 3D scanning based on SICK LD-MRS and FLIR PTU-46
 
 ```
 % source /opt/ros/$ROS_VERSION/setup.bash
+% export INSTALL_PATH=/{YOUR_INSTALL_PATH}
 % export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:$INSTALL_PATH/lib/pkgconfig
 % export ROS_PACKAGE_PATH=$ROS_PACKAGE_PATH:$INSTALL_PATH/src/ros-nodes:$INSTALL_PATH/share
 % export PYTHONPATH=/opt/ros/groovy/lib/python2.7/dist-packages:$INSTALL_PATH/lib/python2.7/site-packages
@@ -36,7 +37,7 @@ A ROS driver for 3D scanning based on SICK LD-MRS and FLIR PTU-46
 ```
 % autoreconf -vi
 % mkdir build && cd build
-% ../configure --prefix=${INSTALL_PATH} --with-templates=ros/server,ros/client/c,ros/client/ros
+% ../configure --prefix=${YOUR_INSTALL_PATH} --with-templates=ros/server,ros/client/c,ros/client/ros
 % make
 % make install
 ```
