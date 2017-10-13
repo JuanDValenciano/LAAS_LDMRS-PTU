@@ -7,6 +7,21 @@ A ROS driver for 3D scanning based on SICK LD-MRS and FLIR PTU-46
 * ROS
 
 ## Getting Started
+* Install [RobotoPKG](http://robotpkg.openrobots.org/install.html)
+* After run ./bootstrap:
+```
+% cd robotpkg/architecture/genom3
+% make update
+% make
+% make install
+```
+```
+% cd robotpkg/interfaces/openrobots-idl
+% make update
+% make
+% make install
+```
+
 * Setup (bash version) with $ROS_VERSION, your ros version :
 
 ```
